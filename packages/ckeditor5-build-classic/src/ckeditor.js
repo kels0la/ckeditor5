@@ -82,7 +82,7 @@ ClassicEditor.defaultConfig = {
 			'blockQuote',
 			'insertTable',
 			'imageInsert',
-			'code-block',
+			'codeBlock',
 			'mediaEmbed',
 			'undo',
 			'redo'
