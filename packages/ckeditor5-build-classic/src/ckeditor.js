@@ -7,6 +7,7 @@
 import ClassicEditorBase from '@ckeditor/ckeditor5-editor-classic/src/classiceditor';
 
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
+import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
 import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
@@ -20,6 +21,7 @@ import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
+import ImageInsert from '@ckeditor/ckeditor5-image/src/imageinsert';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
@@ -39,6 +41,7 @@ ClassicEditor.builtinPlugins = [
 	Autoformat,
 	Bold,
 	Italic,
+	CodeBlock,
 	BlockQuote,
 	CKFinder,
 	EasyImage,
@@ -48,6 +51,7 @@ ClassicEditor.builtinPlugins = [
 	ImageStyle,
 	ImageToolbar,
 	ImageUpload,
+	ImageInsert,
 	Indent,
 	Link,
 	List,
@@ -77,6 +81,8 @@ ClassicEditor.defaultConfig = {
 			'imageUpload',
 			'blockQuote',
 			'insertTable',
+			'imageInsert',
+			'code-block',
 			'mediaEmbed',
 			'undo',
 			'redo'
